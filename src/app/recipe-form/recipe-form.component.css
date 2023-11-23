@@ -1,0 +1,32 @@
+
+.recipe-form-container {
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+  }
+  
+  /* Style the form elements */
+  .recipe-form-container input[type="text"] {
+    width: 100%;
+    padding: 8px;
+    margin: 5px 0;
+  }
+  
+  .recipe-form-container button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .recipe-form-container button:hover {
+    background-color: #0056b3;
+  }
+
+  .align {
+    text-align: center;  
+    width: 300px;    
+  }
+  
+  

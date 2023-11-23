@@ -1,0 +1,28 @@
+
+<h2>Recipe List</h2>
+
+<div *ngFor="let recipe of recipes">
+  <div>
+    <img [src]="recipe.image" alt="{{ recipe.name }}" class="recipe-image">
+  </div>
+  <div>
+    <h3>{{ recipe.name }}</h3>
+    <p>{{ recipe.description }}</p>
+  </div>
+  <table class="ingredient-table">
+    <thead>
+      <tr>
+        <th>Ingredients</th>
+        <th>Action</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let ingredient of recipe.ingredients">
+        <td>{{ ingredient }}</td>
+        <td>
+          <button (click)="addToCart(ingredient)">Add to Cart</button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>

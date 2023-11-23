@@ -1,0 +1,10 @@
+runtime: nodejs18
+instance_class: F2
+env_variables:
+  BUCKET_NAME: "recipebook16"
+handlers: 
+  - url: /
+    static_files: dist/demo/index.html
+    upload: dist/demo/index.html 
+  - url: /
+    static_dir: dist/demo
